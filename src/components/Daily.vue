@@ -5,7 +5,7 @@
       <h2>{{this.daily.date}}</h2>
     </div>
     <a :href="this.daily.hdurl">
-      <img :src="this.daily.hdurl" :alt="this.daily.title" />
+      <img :src="this.daily.url" :alt="this.daily.title" />
     </a>
     <p>{{this.daily.explanation}}</p>
   </div>

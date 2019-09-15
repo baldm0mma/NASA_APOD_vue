@@ -3,7 +3,7 @@
     <div class="positioning">
       <router-link class="navigation" to="/">
         <img src="../assets/NASA_logo.svg" alt="NASA Logo" />
-        <p>Home</p>
+        <p>Photos Home</p>
       </router-link>
     </div>
     <h1>Nasa's Daily Astronomy Photos for {{currentMonthName}}, {{currentYear}}</h1>
@@ -54,10 +54,9 @@ img {
 p {
   background-color: #333;
   padding-right: 10px;
-  text-decoration: none;
+  color: #fff;
 }
 a {
   text-decoration: none;
-  color: #fff;
 }
 </style>
