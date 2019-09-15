@@ -24,7 +24,7 @@ div {
   justify-content: center;
   align-items: center;
   height: 5rem;
-  background-color: #222;
+  background-color: #333;
   color: #fff;
 }
 </style>

@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Monthly from './src/components/Monthly.vue';
+import Monthly from './components/Monthly';
 
-Vue.user(Router);
+Vue.use(Router);
 
 export const router = new Router({
   mode: 'history',
@@ -10,6 +10,11 @@ export const router = new Router({
     {
       path: '/',
       name: 'Monthly Photos',
+      component: Monthly
+    },
+    {
+      path: '/photo/:id',
+      name: 'Daily',
       component: Monthly
     }
   ]

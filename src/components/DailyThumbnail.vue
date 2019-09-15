@@ -14,7 +14,15 @@
 
 <style scoped>
 img {
-  box-shadow: 0 0 35px black;
+  box-shadow: 0 0 30px black;
   width: 80%;
+}
+h3 {
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+}
+p {
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 </style>
