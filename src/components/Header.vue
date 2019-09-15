@@ -27,4 +27,7 @@ div {
   background-color: #333;
   color: #fff;
 }
+h1 {
+  background-color: #333;
+}
 </style>

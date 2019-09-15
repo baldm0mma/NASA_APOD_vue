@@ -1,18 +1,29 @@
 <template>
-  <div>
-    <h3>{{daily.title}}</h3>
-    <img :src="daily.url" :alt="daily.title"/>
-    <p>{{daily.date}}</p>
-  </div>
+  <router-link :to="dailyPath">
+    <div>
+      <h3>{{daily.title}}</h3>
+      <img :src="daily.url" :alt="daily.title" />
+      <p>{{daily.date}}</p>
+    </div>
+  </router-link>
 </template>
 
 <script>
-  export default {
-    props: ['daily']
+export default {
+  props: ["daily"],
+  computed: {
+    dailyPath: function() {
+      return `/photo/${this.daily.date}`
+    }
   }
+};
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  color: #333;
+}
 img {
   box-shadow: 0 0 30px black;
   width: 80%;

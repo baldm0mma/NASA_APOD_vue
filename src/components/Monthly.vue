@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <li :key="daily.date" v-for="daily in monthOfAPODs" @click="">
+      <li :key="daily.date" v-for="daily in monthOfAPODs">
         <DailyThumbnail :daily="daily" />
       </li>
     </ul>
@@ -16,7 +16,6 @@ export default {
   name: "Monthly",
   data() {
     return {
-      fullMonthUrl,
       monthOfAPODs: []
     };
   },
@@ -29,13 +28,9 @@ export default {
         const result = await fetch(fullMonthUrl);
         const parsed = await result.json();
         this.monthOfAPODs = parsed;
-        console.log(this.monthOfAPODs);
       } catch (error) {
         console.log(error);
       }
-    },
-    getDate: function() {
-      
     }
   },
   components: {
