@@ -1,5 +1,11 @@
 <template>
-  <div>
+  <div class="container">
+    <div class="positioning">
+      <router-link class="navigation" to="/">
+        <img src="../assets/NASA_logo.svg" alt="NASA Logo" />
+        <p>Home</p>
+      </router-link>
+    </div>
     <h1>Nasa's Daily Astronomy Photos for {{currentMonthName}}, {{currentYear}}</h1>
   </div>
 </template>
@@ -23,11 +29,35 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5rem;
+  height: 10rem;
   background-color: #333;
   color: #fff;
 }
+.container {
+  display: flex;
+}
+.positioning {
+  position: absolute;
+  left: 20px;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
 h1 {
   background-color: #333;
+  font-size: 2.3rem;
+}
+img {
+  background-color: #333;
+}
+p {
+  background-color: #333;
+  padding-right: 10px;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
 }
 </style>
