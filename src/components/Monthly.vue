@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <li :key="daily.date" v-for="daily in monthOfAPODs">
+      <li :key="daily.date" v-for="daily in monthOfAPODs" @click="">
         <DailyThumbnail :daily="daily" />
       </li>
     </ul>
@@ -33,6 +33,9 @@ export default {
       } catch (error) {
         console.log(error);
       }
+    },
+    getDate: function() {
+      
     }
   },
   components: {
