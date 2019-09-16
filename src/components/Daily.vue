@@ -4,8 +4,11 @@
       <h2>{{this.daily.title}}</h2>
       <h2>{{this.daily.date}}</h2>
     </div>
-    <a :href="this.daily.hdurl">
+    <a v-if="this.daily.media_type === 'image'" :href="this.daily.hdurl">
       <img :src="this.daily.url" :alt="this.daily.title" />
+    </a>
+    <a v-else-if="this.daily.media_type === 'video'" :href="this.daily.url">
+      <img class="video" src="../assets/videoIcon.png" alt="video link" />
     </a>
     <p>{{this.daily.explanation}}</p>
   </div>
@@ -50,6 +53,9 @@ export default {
 img {
   box-shadow: 0 0 30px black;
   width: 90%;
+}
+.video {
+  width: 30%
 }
 p {
   padding: 40px 90px;

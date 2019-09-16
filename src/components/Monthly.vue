@@ -27,7 +27,7 @@ export default {
       try {
         const result = await fetch(fullMonthUrl);
         const parsed = await result.json();
-        this.monthOfAPODs = parsed;
+        this.monthOfAPODs = parsed.reverse();
       } catch (error) {
         console.log(error);
       }

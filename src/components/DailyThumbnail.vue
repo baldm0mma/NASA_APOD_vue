@@ -2,7 +2,8 @@
   <router-link :to="dailyPath">
     <div>
       <h3>{{daily.title}}</h3>
-      <img :src="daily.url" :alt="daily.title" />
+      <img v-if="daily.media_type === 'image'" :src="daily.url" :alt="daily.title" />
+      <img v-else src="../assets/videoIcon.png" alt="video link" />
       <p>{{daily.date}}</p>
     </div>
   </router-link>
