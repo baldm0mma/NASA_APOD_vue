@@ -1,3 +1,3 @@
-module.exports = {
-  publicPath: "/NASA_APOD_vue/"
-  }
+// module.exports = {
+//   publicPath: "/NASA_APOD_vue/"
+//   }
