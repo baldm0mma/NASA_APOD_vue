@@ -30,11 +30,11 @@ img {
   width: 80%;
 }
 h3 {
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   font-size: 1.2rem;
 }
 p {
-  padding-top: 15px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 35px;
 }
 </style>
