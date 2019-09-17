@@ -25,6 +25,7 @@ Also, testing. As ashamed as I am to admit it, here goes: I have zero tests. The
 * Build out a robust testing suite.
 * Create search by date and title functionality.
 * Add page transitions.
+* Create a layout that takes advantage of a CSS masonry grid style.
 
 ## Project Tech Emphasis
 
