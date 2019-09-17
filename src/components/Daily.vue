@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="margin">
     <div class="container">
       <h2>{{this.daily.title}}</h2>
       <h2>{{this.daily.date}}</h2>
@@ -44,6 +44,9 @@ export default {
 </script>
 
 <style scoped>
+.margin {
+  padding-top: 20px;
+}
 .container {
   display: flex;
   flex-direction: row;

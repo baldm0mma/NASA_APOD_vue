@@ -40,6 +40,9 @@ export default {
 </script>
 
 <style scoped>
+div {
+  padding-top: 20px;
+}
 ul {
   display: grid;
   list-style: none;
