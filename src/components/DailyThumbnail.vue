@@ -3,7 +3,7 @@
     <div>
       <h3>{{daily.title}}</h3>
       <img v-if="daily.media_type === 'image'" :src="daily.url" :alt="daily.title" />
-      <img v-else src="../assets/videoIcon.png" alt="video link" />
+      <iframe v-else type="text/html" width="320" height="240" :src="daily.url"></iframe>
       <p>{{daily.date}}</p>
     </div>
   </router-link>
@@ -14,7 +14,7 @@ export default {
   props: ["daily"],
   computed: {
     dailyPath: function() {
-      return `/photo/${this.daily.date}`
+      return `/photo/${this.daily.date}`;
     }
   }
 };

@@ -7,9 +7,13 @@
     <a v-if="this.daily.media_type === 'image'" :href="this.daily.hdurl">
       <img :src="this.daily.url" :alt="this.daily.title" />
     </a>
-    <a v-else-if="this.daily.media_type === 'video'" :href="this.daily.url">
-      <img class="video" src="../assets/videoIcon.png" alt="video link" />
-    </a>
+    <iframe
+      v-else-if="this.daily.media_type === 'video'"
+      type="text/html"
+      width="900"
+      height="675"
+      :src="daily.url"
+    ></iframe>
     <p>{{this.daily.explanation}}</p>
   </div>
 </template>
@@ -58,7 +62,7 @@ img {
   width: 90%;
 }
 .video {
-  width: 30%
+  width: 30%;
 }
 p {
   padding: 40px 90px;
