@@ -32,7 +32,8 @@ Also, testing. As ashamed as I am to admit it, here goes: I have zero tests. The
 * JavaScript
 * Vue.js
 * Vue Router
-* Trello
+* Trello for Project Management
+* Travis CI for Continuous Integration
 * GH Pages for deployment
 
 ## Project Management
