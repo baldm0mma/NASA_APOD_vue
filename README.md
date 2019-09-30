@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a theoretical takehome code challenge. The prompt goes as follows: "Build a single-page application in **Vue.js** that queries the NASA Astronomy Picture of the Day API and displays the day's image. The application should include a way to view each of the current month's pictures (it's okay if the month only has 1 photo so far, for example if it's the first of the month), and a way to return to the current day's picture. Be creative with how you present the collections - think about the experience of the viewer with what they want to view and learn."
+This project was takehome code challenge. The prompt goes as follows: "Build a single-page application in **Vue.js** that queries the NASA Astronomy Picture of the Day API and displays the day's image. The application should include a way to view each of the current month's pictures (it's okay if the month only has 1 photo so far, for example if it's the first of the month), and a way to return to the current day's picture. Be creative with how you present the collections - think about the experience of the viewer with what they want to view and learn."
 
 ## SetUp
 - Clone down this repo and cd into the directory.
